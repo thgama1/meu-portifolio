@@ -11,7 +11,9 @@ import {
   BarChart3, 
   Server,
   ExternalLink,
-  ChevronDown
+  ChevronDown,
+  Brain,
+  Cpu
 } from 'lucide-react';
 
 export default function App() {
@@ -83,14 +85,14 @@ export default function App() {
             <motion.div variants={fadeInUp} className="inline-block mb-4 px-3 py-1 rounded-full bg-blue-500/10 text-blue-500 text-sm font-medium border border-blue-500/20">
               Desenvolvedor & Suporte de TI
             </motion.div>
-            <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight">
-              Thiago Gama <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-                Marçal
+            <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl font-display font-bold mb-6 tracking-tight">
+              Thiago Gama Marçal
+              <span className="block text-2xl md:text-4xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+                Sistemas de Informação & Automação
               </span>
             </motion.h1>
             <motion.p variants={fadeInUp} className={`text-xl md:text-2xl mb-10 leading-relaxed ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
-              Estudante de Sistemas de Informação transformando problemas complexos em soluções eficientes.
+              Bacharel em SI utilizando a base da Automação Industrial para criar soluções inteligentes através de Dados e IA.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row justify-center gap-4">
               <a 
@@ -130,26 +132,42 @@ export default function App() {
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Sobre Mim</h2>
               <div className={`space-y-4 text-lg leading-relaxed ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
                 <p>
-                  Olá! Sou Thiago, atualmente cursando <strong>Sistemas de Informação</strong> e apaixonado por tecnologia.
+                  Sou <strong>Bacharel em Sistemas de Informação</strong> e possuo formação técnica em <strong>Automação Industrial</strong>, uma combinação que me permite unir a visão lógica de processos com a gestão de infraestrutura de TI.
                 </p>
                 <p>
-                  Trabalho com <strong>Suporte de TI</strong> na <strong>Invictus Medical Center</strong>, onde desenvolvo habilidades essenciais em resolução de problemas, infraestrutura e atendimento ao usuário.
+                  Atualmente, atuo no suporte de TI do <strong>Hospital Viver Mais</strong>, onde foco na eficiência operacional e na resolução de problemas críticos de tecnologia. Tenho experiência prática no gerenciamento e suporte do sistema <strong>Tasy</strong>.
                 </p>
                 <p>
-                  Meu foco é unir o conhecimento acadêmico com a prática do dia a dia para criar soluções que realmente impactam a produtividade e a segurança das informações.
+                  Meu objetivo é continuar evoluindo na intersecção entre tecnologia e análise, utilizando meu background em automação para aprimorar o suporte técnico e a entrega de soluções inteligentes para o negócio.
+                </p>
+                <p className="pt-2 italic text-base opacity-90">
+                  ⚽ Fora da tecnologia, sou pai do Théo e um entusiasta do Flamengo.
                 </p>
               </div>
               
-              <div className="mt-8 grid grid-cols-2 gap-4">
+              <div className="mt-8 grid grid-cols-1 gap-4">
                 <div className={`p-4 rounded-xl border ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
-                  <Terminal className="text-blue-500 mb-2" size={24} />
-                  <h3 className="font-semibold">Desenvolvimento</h3>
-                  <p className={`text-sm ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Automação & Web</p>
+                  <div className="flex items-center gap-3 mb-2">
+                    <Brain className="text-blue-500" size={24} />
+                    <h3 className="font-semibold">Dados & IA</h3>
+                  </div>
+                  <p className={`text-sm ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Python (Pandas/NumPy), SQL, Power BI</p>
                 </div>
+
                 <div className={`p-4 rounded-xl border ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
-                  <Server className="text-emerald-500 mb-2" size={24} />
-                  <h3 className="font-semibold">Infraestrutura</h3>
-                  <p className={`text-sm ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Redes & Suporte</p>
+                  <div className="flex items-center gap-3 mb-2">
+                    <Server className="text-indigo-500" size={24} />
+                    <h3 className="font-semibold">Infraestrutura & Suporte</h3>
+                  </div>
+                  <p className={`text-sm ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Gestão de Redes, Firewalls, Suporte Nível 2 e Sistemas Hospitalares (Tasy)</p>
+                </div>
+
+                <div className={`p-4 rounded-xl border ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
+                  <div className="flex items-center gap-3 mb-2">
+                    <Cpu className="text-emerald-500" size={24} />
+                    <h3 className="font-semibold">Automação</h3>
+                  </div>
+                  <p className={`text-sm ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Lógica de Programação Industrial, Scripts de Automação e Otimização de Processos</p>
                 </div>
               </div>
             </div>
@@ -302,3 +320,4 @@ function SocialLink({ href, icon, label, darkMode }: {
     </a>
   );
 }
+
