@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import minhafoto from "C:\Users\thiag\Downloads\thiago-gama-marçal-portfolio\src\public\thiago.jpeg";
 import { motion } from 'motion/react';
 import { 
   Github, 
@@ -174,7 +175,7 @@ export default function App() {
             <div className="relative">
               <div className={`aspect-square rounded-2xl overflow-hidden shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500 ${darkMode ? 'bg-slate-800' : 'bg-white'}`}>
                 <img 
-                  src="https://picsum.photos/seed/thiago/800/800" 
+                  src={minhafoto} 
                   alt="Thiago Gama Marçal" 
                   className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
                   referrerPolicy="no-referrer"
@@ -238,12 +239,39 @@ export default function App() {
               </p>
             </div>
             
-            <div className="flex gap-6">
+            {/* <div className="flex gap-6">
               <SocialLink href="#" icon={<Github size={24} />} label="GitHub" darkMode={darkMode} />
               <SocialLink href="#" icon={<Linkedin size={24} />} label="LinkedIn" darkMode={darkMode} />
-              <SocialLink href="mailto:thiago@example.com" icon={<Mail size={24} />} label="Email" darkMode={darkMode} />
+              <SocialLink href="thiagogmarcal@gmail.com" icon={<Mail size={24} />} label="Email" darkMode={darkMode} />
             </div>
-          </div>
+          </div> */}
+
+          <div className="flex gap-6">
+  <SocialLink 
+    href="https://github.com/thgama1" 
+    icon={<Github size={24} />} 
+    label="GitHub" 
+    darkMode={darkMode} 
+  />
+  <SocialLink 
+    href="https://www.linkedin.com/in/thiago-gama-marcal/" 
+    icon={<Linkedin size={24} />} 
+    label="LinkedIn" 
+    darkMode={darkMode} 
+  />
+  <SocialLink 
+    href="https://www.instagram.com/_thgama/" 
+    icon={<Instagram size={24} />} 
+    label="Instagram" 
+    darkMode={darkMode} 
+  />
+  <SocialLink 
+    href="mailto:thiagogmarcal@gmail.com" 
+    icon={<Mail size={24} />} 
+    label="Email" 
+    darkMode={darkMode} 
+  />
+</div>
           
           <div className={`mt-12 pt-8 border-t text-center text-sm ${darkMode ? 'border-slate-800 text-slate-500' : 'border-slate-200 text-slate-500'}`}>
             <p>&copy; {new Date().getFullYear()} Thiago Gama Marçal. Todos os direitos reservados.</p>
