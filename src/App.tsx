@@ -239,12 +239,12 @@ export default function App() {
               </p>
         </div>
             
-            /* <div className="flex gap-6">
+              {/* <div className="flex gap-6">
               <SocialLink href="#" icon={<Github size={24} />} label="GitHub" darkMode={darkMode} />
               <SocialLink href="#" icon={<Linkedin size={24} />} label="LinkedIn" darkMode={darkMode} />
               <SocialLink href="thiagogmarcal@gmail.com" icon={<Mail size={24} />} label="Email" darkMode={darkMode} />
             </div>
-          </div> */
+          </div>  */}
 
           <div className="flex gap-6">
   <SocialLink 
