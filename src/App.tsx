@@ -237,48 +237,42 @@ export default function App() {
               <p className={darkMode ? 'text-slate-400' : 'text-slate-600'}>
                 Estou sempre aberto a novas oportunidades e conexões.
               </p>
-        </div>
-            
-              {/* <div className="flex gap-6">
-              <SocialLink href="#" icon={<Github size={24} />} label="GitHub" darkMode={darkMode} />
-              <SocialLink href="#" icon={<Linkedin size={24} />} label="LinkedIn" darkMode={darkMode} />
-              <SocialLink href="thiagogmarcal@gmail.com" icon={<Mail size={24} />} label="Email" darkMode={darkMode} />
             </div>
-          </div>  */}
 
-          <div className="flex gap-6">
-  <SocialLink 
-    href="https://github.com/thgama1" 
-    icon={<Github size={24} />} 
-    label="GitHub" 
-    darkMode={darkMode} 
-  />
-  <SocialLink 
-    href="https://www.linkedin.com/in/thiago-gama-marcal/" 
-    icon={<Linkedin size={24} />} 
-    label="LinkedIn" 
-    darkMode={darkMode} 
-  />
-  <SocialLink 
-    href="https://www.instagram.com/_thgama/" 
-    icon={<Instagram size={24} />} 
-    label="Instagram" 
-    darkMode={darkMode} 
-  />
-  <SocialLink 
-    href="mailto:thiagogmarcal@gmail.com" 
-    icon={<Mail size={24} />} 
-    label="Email" 
-    darkMode={darkMode} 
-  />
-</div>
+            <div className="flex gap-6">
+              <SocialLink 
+                href="https://github.com/thgama1" 
+                icon={<Github size={24} />} 
+                label="GitHub" 
+                darkMode={darkMode} 
+              />
+              <SocialLink 
+                href="https://www.linkedin.com/in/thiago-gama-marcal/" 
+                icon={<Linkedin size={24} />} 
+                label="LinkedIn" 
+                darkMode={darkMode} 
+              />
+              <SocialLink 
+                href="https://www.instagram.com/_thgama/" 
+                icon={<Instagram size={24} />} 
+                label="Instagram" 
+                darkMode={darkMode} 
+              />
+              <SocialLink 
+                href="mailto:thiagogmarcal@gmail.com" 
+                icon={<Mail size={24} />} 
+                label="Email" 
+                darkMode={darkMode} 
+              />
+            </div>
+          </div> {/* Fim da div flex-row que separa texto de ícones */}
           
           <div className={`mt-12 pt-8 border-t text-center text-sm ${darkMode ? 'border-slate-800 text-slate-500' : 'border-slate-200 text-slate-500'}`}>
-            <p>&copy; {new Date().getFullYear()} Thiago Gama Marçal. Todos os direitos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} Thiago Gama Marçal. Pai do Théo e Flamenguista. Todos os direitos reservados.</p>
           </div>
-        </div>
+        </div> {/* Fim da div max-w-7xl */}
       </footer>
-    </div>
+    </div> // Fim da div principal do App
   );
 }
 
