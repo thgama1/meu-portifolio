@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import minhafoto from "C:\Users\thiag\Downloads\thiago-gama-marçal-portfolio\src\public\thiago.jpeg";
 import { motion } from 'motion/react';
 import { 
   Github, 
@@ -14,7 +13,8 @@ import {
   ExternalLink,
   ChevronDown,
   Brain,
-  Cpu
+  Cpu,
+  Instagram
 } from 'lucide-react';
 
 export default function App() {
@@ -175,7 +175,7 @@ export default function App() {
             <div className="relative">
               <div className={`aspect-square rounded-2xl overflow-hidden shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500 ${darkMode ? 'bg-slate-800' : 'bg-white'}`}>
                 <img 
-                  src={minhafoto} 
+                  src="/thiago.jpg" 
                   alt="Thiago Gama Marçal" 
                   className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
                   referrerPolicy="no-referrer"
@@ -237,14 +237,14 @@ export default function App() {
               <p className={darkMode ? 'text-slate-400' : 'text-slate-600'}>
                 Estou sempre aberto a novas oportunidades e conexões.
               </p>
-            </div>
+        </div>
             
-            {/* <div className="flex gap-6">
+            /* <div className="flex gap-6">
               <SocialLink href="#" icon={<Github size={24} />} label="GitHub" darkMode={darkMode} />
               <SocialLink href="#" icon={<Linkedin size={24} />} label="LinkedIn" darkMode={darkMode} />
               <SocialLink href="thiagogmarcal@gmail.com" icon={<Mail size={24} />} label="Email" darkMode={darkMode} />
             </div>
-          </div> */}
+          </div> */
 
           <div className="flex gap-6">
   <SocialLink 
