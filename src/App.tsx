@@ -84,7 +84,7 @@ export default function App() {
             className="text-center max-w-3xl mx-auto"
           >
             <motion.div variants={fadeInUp} className="inline-block mb-4 px-3 py-1 rounded-full bg-blue-500/10 text-blue-500 text-sm font-medium border border-blue-500/20">
-              Desenvolvedor & Suporte de TI
+              Bacharel em SI | Analista de TI focado em Dados & Automação
             </motion.div>
             <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl font-display font-bold mb-6 tracking-tight">
               Thiago Gama Marçal
@@ -142,7 +142,7 @@ export default function App() {
                   Meu objetivo é continuar evoluindo na intersecção entre tecnologia e análise, utilizando meu background em automação para aprimorar o suporte técnico e a entrega de soluções inteligentes para o negócio.
                 </p>
                 <p className="pt-2 italic text-base opacity-90">
-                  ⚽ Fora da tecnologia, sou pai do Théo e um entusiasta do Flamengo.
+                  ⚽ Fora da tecnologia, sou pai do Théo e fanático pelo Flamengo.
                 </p>
               </div>
               
@@ -175,7 +175,7 @@ export default function App() {
             <div className="relative">
               <div className={`aspect-square rounded-2xl overflow-hidden shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500 ${darkMode ? 'bg-slate-800' : 'bg-white'}`}>
                 <img 
-                  src="thiago.jpg"
+                  src="thiago.jpeg"
                   alt="Thiago Gama Marçal" 
                   className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
                   referrerPolicy="no-referrer"
@@ -268,7 +268,7 @@ export default function App() {
           </div> {/* Fim da div flex-row que separa texto de ícones */}
           
           <div className={`mt-12 pt-8 border-t text-center text-sm ${darkMode ? 'border-slate-800 text-slate-500' : 'border-slate-200 text-slate-500'}`}>
-            <p>&copy; {new Date().getFullYear()} Thiago Gama Marçal. Pai do Théo e Flamenguista. Todos os direitos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} Thiago Gama Marçal. Todos os direitos reservados.</p>
           </div>
         </div> {/* Fim da div max-w-7xl */}
       </footer>
