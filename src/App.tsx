@@ -175,7 +175,7 @@ export default function App() {
             <div className="relative">
               <div className={`aspect-square rounded-2xl overflow-hidden shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500 ${darkMode ? 'bg-slate-800' : 'bg-white'}`}>
                 <img 
-                  src="/thiago.jpg" 
+                  src="thiago.jpg"
                   alt="Thiago Gama Marçal" 
                   className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
                   referrerPolicy="no-referrer"
@@ -331,6 +331,8 @@ function SocialLink({ href, icon, label, darkMode }: {
   return (
     <a 
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`p-3 rounded-full transition-all duration-300 ${
         darkMode 
           ? 'bg-slate-800 text-slate-400 hover:bg-blue-600 hover:text-white' 
