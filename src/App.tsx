@@ -8,7 +8,8 @@ import {
   Sun, 
   Terminal, 
   Database, 
-  BarChart3, 
+  BarChart3,
+  Laptop, 
   Server,
   ExternalLink,
   ChevronDown,
@@ -136,13 +137,13 @@ export default function App() {
                   Sou <strong>Bacharel em Sistemas de Informação</strong> e possuo formação técnica em <strong>Automação Industrial</strong>, uma combinação que me permite unir a visão lógica de processos com a gestão de infraestrutura de TI.
                 </p>
                 <p>
-                  Atualmente, atuo no suporte de TI do <strong>Hospital Viver Mais</strong>, onde foco na eficiência operacional e na resolução de problemas críticos de tecnologia. Tenho experiência prática no gerenciamento e suporte do sistema <strong>Tasy</strong>.
+                  Atualmente, atuo no suporte de TI do Hospital Viver Mais, onde foco na eficiência operacional e na resolução de problemas críticos de tecnologia. Tenho experiência prática no gerenciamento e suporte do sistema Tasy.
                 </p>
                 <p>
                   Meu objetivo é continuar evoluindo na intersecção entre tecnologia e análise, utilizando meu background em automação para aprimorar o suporte técnico e a entrega de soluções inteligentes para o negócio.
                 </p>
                 <p className="pt-2 italic text-base opacity-90">
-                  ⚽ Fora da tecnologia, sou pai do Théo e fanático pelo Flamengo.
+                   Fora da tecnologia, sou pai do Théo e fanático pelo Flamengo.
                 </p>
               </div>
               
@@ -206,22 +207,22 @@ export default function App() {
             <ProjectCard 
               title="Automação de Relatórios Tasy"
               description="Script desenvolvido para automatizar a extração e formatação de relatórios do sistema hospitalar Tasy, reduzindo o tempo manual em 80%."
-              tags={['Python', 'Pandas', 'Automação']}
+              tags={['Python', 'Power Automate', 'Automação']}
               icon={<Database size={24} />}
               darkMode={darkMode}
             />
             <ProjectCard 
               title="Sistema de Senhas"
               description="Aplicação web para gerenciamento de filas e chamadas de senhas em clínicas, melhorando o fluxo de atendimento aos pacientes."
-              tags={['React', 'Node.js', 'WebSocket']}
+              tags={['HTML', 'CSS', 'JavaScript']}
               icon={<Terminal size={24} />}
               darkMode={darkMode}
             />
             <ProjectCard 
-              title="Análise de Dados"
-              description="Dashboard interativo para visualização de métricas de atendimento e performance da equipe de suporte."
-              tags={['Power BI', 'SQL', 'Data Viz']}
-              icon={<BarChart3 size={24} />}
+              title="Editor Imagens DICOM"
+              description="Script desenvolvido em python para a edição de imagens DICOM em grande quantidade."
+              tags={['Python']}
+              icon={<Laptop size={24} />}
               darkMode={darkMode}
             />
           </div>
@@ -233,9 +234,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
-              <h3 className="text-2xl font-display font-bold mb-2">Vamos conversar?</h3>
+              {/* <h3 className="text-2xl font-display font-bold mb-2">Vamos conversar?</h3> */}
               <p className={darkMode ? 'text-slate-400' : 'text-slate-600'}>
-                Estou sempre aberto a novas oportunidades e conexões.
+                Estou sempre aberto a novas oportunidades e conexões!
               </p>
             </div>
 
@@ -272,7 +273,7 @@ export default function App() {
           </div>
         </div> {/* Fim da div max-w-7xl */}
       </footer>
-    </div> // Fim da div principal do App
+    </div> 
   );
 }
 
